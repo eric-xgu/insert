@@ -1,0 +1,17 @@
+server:
+  port: 8081
+  restart:
+    enabled: true  #设置开启热部署
+    additional-paths: src/main/java #重启目录
+    exclude: WEB-INF/**
+target:
+  ip: 192.168.2.139
+  port: 5138
+  db: system
+  user: SYSDBA
+  password: SYSDBA
+  target_table: usr_sod.SURF_WEA_CHN_MUL_HOR_TAB
+  local_path: D:/cimiss
+  split: ','
+  char_set: UTF-8
+  thread_num: 1
